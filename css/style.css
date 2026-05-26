@@ -1,6 +1,6 @@
 
 html {
-  font-size: 16px;
+  font-size: 100%;
   box-sizing: border-box;
 }
 
@@ -17,8 +17,9 @@ body {
 }
 
 
-*:focus {
-  outline: none;
+:focus-visible {
+  outline: 2px solid #c8956c;
+  outline-offset: 2px;
 }
 
 a {
@@ -257,7 +258,7 @@ nav a[aria-current="page"] {
   color: #2c1a0e;
 }
 
-.btn-submit {
+button.btn-submit {
   display: inline-block;
   background: #4a2c1a;
   color: #ffffff;
@@ -267,6 +268,7 @@ nav a[aria-current="page"] {
   cursor: pointer;
   align-self: flex-start;
   font-family: inherit;
+  border: none;
 }
 
 .btn-submit:hover {
